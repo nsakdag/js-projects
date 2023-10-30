@@ -1,0 +1,75 @@
+body {
+  background-image: radial-gradient(
+    circle 975px at 2.6% 48.3%,
+    rgba(0, 8, 120, 1) 0%,
+    rgba(95, 184, 224, 1) 99.7%
+  );
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 50px auto;
+
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  background-color: rgb(176, 166, 166);
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.inputDiv {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  justify-content: center;
+}
+.inputDiv input {
+  padding: 10px 15px;
+  width: 60%;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.inputDiv button {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.weatherIcon {
+  display: flex;
+  align-items: center;
+  margin: 60px auto;
+  justify-content: center;
+}
+.weatherTempature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherTempature span {
+  font-size: 3rem;
+}
+
+.bottomDiv {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+
+.weat-icon {
+  width: 120px;
+}
