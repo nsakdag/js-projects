@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array to Table</title>
+    <style>
+      table {
+        border-collapse: collapse; /* Tablo hücreleri arasındaki çizgileri birleştirir */
+        width: 70%; /* Tablo genişliğini ayarlar */
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black; /* Tablo, başlık hücreleri ve veri hücreleri etrafına çizgiler ekler */
+      }
+
+      th,
+      td {
+        padding: 8px; /* Hücre içeriğini kenarlardan biraz içeriye çeker */
+        text-align: left; /* Metni sola hizalar */
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let array1 = [
+        "C1234 - John Doe, London, Full-Stack",
+        "C2345 - Jane Doe, London, Data-Science",
+        "C2346 - Mary Ann, Paris, AWS-Devops",
+        "C2347 - Adam Smith, Texas, AWS-Devops",
+        "C2444 - Michael Great, Arizona, Full-Stack",
+        "C2555 - William Cash, Manchester, Data-Science",
+        "C2455 - Patrick Jane, Madrid, Full-Stack",
+      ];
+
+      const makearray = (array) => {
+        
+        const table = document.createElement("table");
+        array.forEach((element) => {
+          const parts = element.split(", ");
+          const row = document.createElement("tr");
+          parts.forEach((item) => {
+            const cell = document.createElement("td");
+            cell.textContent = item;
+            row.appendChild(cell);
+          });
+          table.appendChild(row);
+        });
+
+        return table;
+      };
+
+      document.body.appendChild(makearray(array1));
+    </script>
+  </body>
+</html>
