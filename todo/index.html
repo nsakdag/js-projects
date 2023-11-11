@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>NS-TODO</title>
+
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+
+    <audio id="myAudio" controls>
+      <source src="./money-pickup-2-89563.mp3" type="audio/mp3">
+      
+    </audio>
+    <audio id="completed" controls>
+      <source src="./coin_c_02-102844.mp3" type="audio/mp3">
+      
+    </audio>
+    <audio id="checked" controls>
+      <source src="./pencil_check_mark_2-105940.mp3" type="audio/mp3">
+      
+    </audio>
+    <header>
+      <h1>NS to-do list</h1>
+      <form id="new-task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="new-task-input"
+          placeholder="What do you have planned?"
+        />
+        <input type="submit" id="new-task-submit" value="Add task" />
+      </form>
+    </header>
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+
+        </div>
+        <div class="completed">
+           
+        </div>
+      </section>
+    </main>
+
+    <script src="fixed.js"></script>
+  </body>
+</html>
